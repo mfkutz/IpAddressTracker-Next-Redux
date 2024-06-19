@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+
+.testz{
+  z-index: 1000;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,6 +30,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
 
 @layer utilities {
   .text-balance {
