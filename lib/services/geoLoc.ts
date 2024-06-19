@@ -1,6 +1,6 @@
 import {  createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const GEO_LOC_API_KEY = 'at_LmXwTnsSlZ0YjAdAPhvybBbmyBSWD'
+const GEO_LOC_API_KEY = process.env.NEXT_PUBLIC_GEO_LOC_API_KEY
 
 export const geoLocApi = createApi({
     reducerPath: "geoLocApi",
